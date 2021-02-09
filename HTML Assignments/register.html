@@ -1,0 +1,100 @@
+<html>
+<head>
+	<title>register now</title>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+	function valid()
+	{
+var name=document.getElementById('name').value;
+var email=document.getElementById('email').value;
+var pass=document.getElementById('pass').value;
+if (name=="")
+ {
+ 	 	alert("enter name");
+ 	return false
+ };
+ if (email=="")
+ {
+  	alert("enter email");
+  	return false
+ };
+ if (pass=="")
+ {
+ 	alert("enter password please");
+ };
+if (name!="" && email!="" && pass!="") 
+	{
+	
+			alert("you are registered. Now you can enjoy amazing offers.");
+	};
+}
+	</script>
+</head>
+
+<style type="text/css">
+.loginbox input
+	{
+		border: none;
+		outline: none;
+		height: 30px;
+		width: 250px;
+		background:rgba(255,255,255,0.5); 
+	
+	}
+
+.loginbox
+{
+	width: 420px;
+	height: 670px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: yellow;
+	font-family: arial;
+	background:rgba(0,0,0,0.4);
+}
+h1
+{
+	font-family:verdana ;
+	color:yellow;
+}
+body
+		{
+	background: url(back2.jpg);
+	background: cover;
+		}
+		#box
+{
+
+	background-color: red;
+	margin:374px;
+	padding:0px;
+	height: 300px;
+	width: 300px;
+}
+
+</style>
+<center>
+<body>
+
+<div class="loginbox">
+	<h1>
+register yourself now to avail amazing discounts
+	</h1>
+<form>
+<h2>name</h2>
+<input type="text" placeholder="enter name here" id="name">
+<h2>email </h2>
+<input type="email"placeholder="abc@gmail.com" id="email">
+<h2>phone number</h2>
+<input type="text"placeholder="03xx-xxxxxxx" id="pass">
+<h2>gender</h2>
+<input type="radio" name="gen" id="gen1"><span>Male</span><br>
+<input type="radio"name="gen" id="gen2"><span>female</span><br>
+<button onclick="valid();">submit</button>
+<div id="box">
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+#naam
+{
+	height: 200px;
+	width: 200px;
+	background: black;
+	margin: 200px;
+	color: white;
+	padding: 10px;
+}
+#outer
+{
+	height: 600px;
+	width: 1365px; 
+	z-index: 1;
+		margin-top: -800px;
+	overflow: hidden;
+	position: relative;
+}
+#inner
+{
+	height: 600px;
+	width: 4165px;
+	z-index: 1;
+	position: relative;
+		margin-top: -800px;
+
+
+}
+.pic
+{
+	height: 600px;
+	width: 1365px; 
+	position: relative;
+	animation: anim 15s infinite;
+	
+}
+@keyframes anim
+{
+	0%
+	{
+		left: 0px;
+
+	}
+	35%
+	{
+		left: 0px;
+	}
+	42%
+	{
+		left:  -1375px;
+
+	}
+	63%
+	{
+		left: -1375px;
+	}
+	70%
+
+	{
+		left: -2735px;
+
+	}
+	90%
+	{
+		left: -2735px;
+
+	}
+	100%
+	{
+		left:0px;
+	}
+	
+}
+
+
+</style>
+
+
+
+
+<body>
+
+
+
+<div id="outer">
+<div id="naam">
+<h1>pizza hut</h1>
+ </div>
+<div id="inner">
+ 	  	<img src="pizza.jpeg" class="pic">
+ 	<img src="pizza2.jpeg" class="pic">
+ 	<img src="pizza3.jpeg" class="pic">
+
+</div>
+	
+
+</div>
+
+</body>
+</html>
